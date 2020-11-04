@@ -97,7 +97,7 @@ def merge_df(df1, df2, df3):
     # left_index and right_index
     res = pd.merge(df1, df3, left_index=True, right_index=True, how='outer')
 
-def read_vsc_pd(info_path):
+def read_csv_pd(info_path):
     names = ["city_code", "city_name", "district_code", "district_name", "bizcircle_id", "bizcircle_name",
              "resblock_id", "resblock_name", "year", "month", "district_refer_price", "district_trans_amount",
              "bizcircle_refer_price", "bizcircle_trans_amount", "resblock_refer_price", "resblock_trans_amount",
